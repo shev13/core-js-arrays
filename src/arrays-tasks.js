@@ -57,13 +57,7 @@ function sumArrays(/* arr1, arr2 */) {
  *    findElement([0, 1, 2, 3, 4, 5], 5) => 5
  */
 function findElement(arr, value) {
-  return arr.reduce((resultIndex, item, index) => {
-    if (resultIndex === -1) {
-      if (item === value) return index;
-      return -1;
-    }
-    return resultIndex;
-  }, -1);
+  return arr.indexOf(value);
 }
 
 /**
